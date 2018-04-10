@@ -1,2 +1,15 @@
-*.iml
-.idea/
+node_modules
+www
+.idea
+.temp
+.sass-cache
+<%= appPath %>/bower_components
+coverage
+platforms
+plugins
+*.swp
+*.swo
+*.log
+*.DS_Store
+app/scripts/configuration.js
+/.sourcemaps/
