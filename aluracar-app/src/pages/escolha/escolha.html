@@ -1,0 +1,46 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Escolha</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+    <ion-slides pager="true">
+        <ion-slide *ngFor="let foto of carro.fotos">
+            <img src="{{foto}}">
+        </ion-slide>
+    </ion-slides>
+
+    <ion-item-group>
+        <ion-item-divider color="light">
+            <ion-icon name="car"></ion-icon>
+            Veículo
+        </ion-item-divider>
+        <ion-item>{{carro.nome}}</ion-item>
+        <ion-item>R$ {{carro.preco}}</ion-item>
+    </ion-item-group>
+    <ion-item-group>
+        <ion-item-divider color="light">
+            <ion-icon name="options"></ion-icon>
+            Acessórios
+        </ion-item-divider>
+        <ion-item>Acessório 1</ion-item>
+        <ion-item>Acessório 2</ion-item>
+        <ion-item>Acessório 3</ion-item>
+        <ion-item>Acessório 4</ion-item>
+        <ion-item>Acessório 5</ion-item>
+        <ion-item>Acessório 6</ion-item>
+        <ion-item>Acessório 7</ion-item>
+        <ion-item>Acessório 8</ion-item>
+        <ion-item>Acessório 9</ion-item>
+    </ion-item-group>
+    <ion-item-divider color="light">
+        <span item-right>Total: R$ 1.000,00</span>
+    </ion-item-divider>
+    <ion-fab top right edge>
+        <button ion-fab>
+            <ion-icon name="arrow-dropright"></ion-icon>
+        </button>
+    </ion-fab>
+</ion-content>
